@@ -26,6 +26,12 @@ import GradeQuiz from './gradingPage/GradeQuiz/GradeQuiz'
 import GradeProject from './gradingPage/GradeProject/GradeProject'
 import GradeCompletion from './gradingPage/GradeCompletion/GradeCompletion'
 import SuccessConfirm from './gradingPage/SuccessConfim/SuccessConfirm'
+import AccountHome from './accountSetPage/AccountHome/AccountHome'
+import StudentAccount from './accountSetPage/StudentAccount/StudentAccount'
+import ExpertAccount from './accountSetPage/ExpertAccount/ExpertAccount'
+import StudentRegister from './accountSetPage/StudentRegister/StudentRegister'
+import StudentAccountSuccess from './accountSetPage/StudentAccountSuccess/StudentAccountSuccess'
+import ExpertAcountSuccess from './accountSetPage/ExpertAccountSuccess/ExpertAcountSuccess'
 
 export default class ProfessorPageRoute extends Component {
     render() {
@@ -34,6 +40,12 @@ export default class ProfessorPageRoute extends Component {
             <div>
                 <Switch>
                     <Route path = '/professor/home' component = {Home}/>
+                    <Route path = '/professor/account/student/set/success' component = {StudentAccountSuccess}/>
+                    <Route path = '/professor/account/student/list' component = {StudentRegister}/>
+                    <Route path = '/professor/account/student' component = {StudentAccount}/>
+                    <Route path = '/professor/account/expert/success' component = {ExpertAcountSuccess}/>
+                    <Route path = '/professor/account/expert' component = {ExpertAccount}/>
+                    <Route path = '/professor/account' component = {AccountHome}/>
                     <Route path = '/professor/grading/report/success' component = {SuccessConfirm}/>
                     <Route path = '/professor/grading/report' component = {GradeReport}/>
                     <Route path = '/professor/grading/quiz/success' component = {SuccessConfirm}/>

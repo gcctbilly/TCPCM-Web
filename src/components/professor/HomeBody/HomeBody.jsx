@@ -12,7 +12,7 @@ export default class HomeBody extends Component {
                         <div className="col offset-xl-0 d-xl-flex"><Link className={nameOfClass.linkClass} role="button" style={style.linkStyle} to = '/professor/capstone'>Capstone Project Course</Link></div>
                     </div>
                     <div className="row">
-                        <div className="col"><Link className={nameOfClass.linkClass} role="button" style = {style.linkStyle}>Account Setup </Link></div>
+                        <div className="col"><Link className={nameOfClass.linkClass} role="button" style = {style.linkStyle} to='/professor/account'>Account Setup </Link></div>
                     </div>
                     <div className="row">
                         <div className="col"><Link className={nameOfClass.linkClass} role="button" style = {style.linkStyle} to ='/professor/studentgroup'>Student Grouping </Link></div>
