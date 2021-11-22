@@ -20,7 +20,6 @@ class ReportSubmitBody extends Component {
     //get the file
     getFile = (event) => {
         const file = event.target.files[0];
-        console.log(file);
         this.setState({file})
 
     }

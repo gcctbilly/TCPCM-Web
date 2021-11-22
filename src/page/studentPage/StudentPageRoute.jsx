@@ -6,6 +6,7 @@ import Success from './Success/Success'
 import QuizSubmit from './QuizSubmit/QuizSubmit'
 import ProjectSubmit from './ProjectSubmit/ProjectSubmit'
 import SummarySubmit from './SummarySubmit/SummarySubmit'
+import SummarySuccess from './SummarySuccess/SummarySuccess'
 
 export default class StudentPageRoute extends Component {
     render() {
@@ -19,7 +20,7 @@ export default class StudentPageRoute extends Component {
                 <Route path="/student/quiz" component={QuizSubmit}/>
                 <Route path="/student/project_milestone/success" component={Success}/>
                 <Route path="/student/project_milestone" component={ProjectSubmit}/>
-                <Route path="/student/summary/success" component={Success}/>
+                <Route path="/student/summary/success" component={SummarySuccess}/>
                 <Route path="/student/summary" component={SummarySubmit}/>
                 <Redirect to="/student/home"/>
                 </Switch>
