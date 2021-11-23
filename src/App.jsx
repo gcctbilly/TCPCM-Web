@@ -13,7 +13,7 @@ export default class App extends Component {
                 <Route path="/industryPage" component={industryPageRoute}/>
                 <Route path="/professor" component= {ProfessorPageRoute}/>
                 <Route path="/student" component= {StudentPageRoute}/>
-                <Redirect to="/student"/>
+                <Redirect to="/professor"/>
                 </Switch>
             </div>
         )
